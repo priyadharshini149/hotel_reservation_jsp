@@ -1,0 +1,163 @@
+<!DocType html>
+<html>
+<head>
+<title>table</title>
+<style> 
+     *{
+       margin:0;
+       padding:0;
+     }
+     
+    .d2{
+       width:390px;
+       height:650px;
+       position:relative;
+       margin:4% auto ;
+       background:#fff;
+       padding:10px;
+     }
+     .navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 10px 105px;
+  text-decoration: none;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+ .d3{
+   padding:20px;
+   border-radius:30px;
+}
+       
+      .b2{
+       margin:auto;
+       padding:10px 42px;
+       background:#8700CA;
+       border:0;
+       position:absolute;
+       border-radius:30px;
+       }
+       
+       #b1{
+      position:absolute;
+      width:110px;
+      height:100%;
+      background:#8700CA;
+      border-radius:30px;
+     
+      }
+       
+       .f1{
+       top:130px;
+       position:absolute;
+       right:20px;
+       width:335px;
+       
+       }
+       
+       .d1{
+       height:110%;
+       width:100%;
+       background:linear-gradient(#8700CA,#000000);
+       background-position:center;
+       background-size:cover;
+       position:absolute;
+   }
+    
+    .u{
+   width:85%;
+   padding:5px;
+   margin: 10px 0;                      
+   border-left:8px;
+   border-right:0;
+   border-bottom:1px solid #999;
+   border-top:0;
+   outline: none;
+   background: transparent;
+   }
+    
+     .b{
+       position:absolute;
+       top:85%;
+       left:38%;
+       }
+      
+      
+   .p1{
+  width:85%;
+  padding:9px 30px;
+  margin:auto;
+  background:#8700CA;
+  border:0;
+  outline:none;
+  border-radius:30px;
+  }
+ 
+ </style>   
+</head>
+<body>
+<div class="navbar">
+<a href="home.html">home</a>
+
+</div>
+<div class="d1">
+<div class="d2">
+<div class="d3">
+<center>
+<h1>Table booking</h1>
+</center>
+</div>
+<form  class="f1" action="http://localhost:8080/sample/table">
+ <input type="text" class="u" name="textF" size="20"  placeholder="Customer Name" pattern="[A-Za-z]{1,}" required>
+ <br>
+ <br>
+ Select:
+<input type="radio"  id="male" name="sel" value="family">
+<label>Family</label>
+<input type="radio"  id="female" name="sel" value="couple">
+<label>Couple</label><br><br>
+ <input type="number" class="u" name="textg" size="20"   placeholder="no of guest"  required>
+ <br>
+ <br>
+Place:
+    <select name="Place" class="u" >
+    <option value="In">place</option>
+    <option value="In">Indoor</option>
+    <option value="Out">Outdoor</option>
+    </select>
+ <br>
+ <br>
+ Date_Time
+ <input type="datetime-local" name=datetime class="u"><br><br>
+ <label for="dish">Choose dishes:</label>
+  <select name="dish" id="dish" class="u"multiple>
+    <option value="Briyani">Briyani</option>
+    <option value="Chicken Curry">Chicken Curry</option>
+    <option value="Chicken Leg">Chicken Leg</option>
+    <option value="Dosa">Dosa</option>
+    <option value="Mutton Gravy">Mutton Gravy</option>
+    <option value="Chick Chilly">Chick Chilly</option>
+    <option value="Kadai varuval">Kadai varuval</option>
+    <option value="fish briyani">fish briyani</option>
+    <option value="fish fry">fish fry</option>
+  </select>
+  <br><br>
+ <input type="checkbox" required> confirm
+ <br>
+ <br>
+ <input type="Submit" value="Book" style="color:white;" class="p1"><br><br>
+ </form>
+  
+</div>
+</div>
+
+</body>
+</html>
